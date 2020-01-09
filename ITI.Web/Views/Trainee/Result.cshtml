@@ -1,0 +1,246 @@
+﻿@model List<ITI.Models.ResultListModel>
+<div class="container">
+    <br />
+</div>
+    <div class="container">
+        <b>Result of All India Test conducted in last 3 years trade-wise (<i>Not applicable for new ITI</i>)</b>
+        <table border="1" cellspacing="0" cellpadding="0" width="100%" class="tableizer-table">
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        Sl. No.
+                    </td>
+                    <td valign="top">
+                        Name of the trade
+                    </td>
+                    <td valign="top">
+                        Year of AITT Month &amp; Year
+                    </td>
+                    <td valign="top">
+                        No. of trainees appeared
+                    </td>
+                    <td valign="top">
+                        No. of trainees passed out
+                    </td>
+                    <td valign="top">
+                        Number of certificates issued (attach sheets if necessary)
+                    </td>
+                    <td valign="top">
+                        No. of Trainees secured job*
+                    </td>
+                </tr>
+                @foreach (var affilation in Model)
+                 {
+                    <tr>
+                        <td align="center" class="text-bold">
+                           @affilation.ID
+                        </td>
+                        <td align="center" class="text-bold">
+                           @affilation.Trade
+                        </td>
+                        <td align="center" class="text-bold">
+                           @affilation.YearOfAlTT
+                        </td>
+                        <td align="center" class="text-bold">
+                           @affilation.TraineesAppeared
+                        </td>
+                        <td align="center" class="text-bold">
+                           @affilation.TraineesPassed
+                        </td>
+                        <td>@affilation.Certificates</td>
+                        <td>@affilation.TraineesJob</td>
+                    </tr>
+                 }
+
+                <tr>
+                    <td valign="top">
+                        1
+                    </td>
+                    <td valign="top">
+                        2
+                    </td>
+                    <td valign="top">
+                        3
+                    </td>
+                    <td valign="top">
+                        <b>4</b>
+                    </td>
+                    <td valign="top">
+                        <b>5</b>
+                    </td>
+                    <td valign="top">
+                        <b>6</b>
+                    </td>
+                    <td valign="top">
+                        <b>7</b>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" valign="top">
+                        1.
+                    </td>
+                    <td rowspan="3" valign="top">
+                        Electrician
+                    </td>
+                    <td valign="top">
+                        Aug 2017
+                    </td>
+                    <td valign="top">
+                        <b>79</b>
+                    </td>
+                    <td valign="top">
+                        <b>75</b>
+                    </td>
+                    <td valign="top">
+                        <b>75</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        Aug .2016
+                    </td>
+                    <td valign="top">
+                        <b>81</b>
+                    </td>
+                    <td valign="top">
+                        <b>78</b>
+                    </td>
+                    <td valign="top">
+                        <b>78</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        Aug 2015
+                    </td>
+                    <td valign="top">
+                        <b>84</b>
+                    </td>
+                    <td valign="top">
+                        <b>68</b>
+                    </td>
+                    <td valign="top">
+                        <b>68</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" valign="top">
+                        2.
+                    </td>
+                    <td rowspan="3" valign="top">
+                        Fitter
+                    </td>
+                    <td valign="top">
+                        Aug 2017
+                    </td>
+                    <td valign="top">
+                        <b>45</b>
+                    </td>
+                    <td valign="top">
+                        <b>21</b>
+                    </td>
+                    <td valign="top">
+                        <b>21</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        Aug .2016
+                    </td>
+                    <td valign="top">
+                        <b>49</b>
+                    </td>
+                    <td valign="top">
+                        <b>34</b>
+                    </td>
+                    <td valign="top">
+                        <b>34</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        Aug 2015
+                    </td>
+                    <td valign="top">
+                        <b>76</b>
+                    </td>
+                    <td valign="top">
+                        <b>20</b>
+                    </td>
+                    <td valign="top">
+                        <b>20</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" valign="top">
+                        3.
+                    </td>
+                    <td rowspan="3" valign="top">
+                        Mechanic Diesel 
+                    </td>
+                    <td valign="top">
+                        Aug 2017
+                    </td>
+                    <td valign="top">
+                        <b>60</b>
+                    </td>
+                    <td valign="top">
+                        <b>42</b>
+                    </td>
+                    <td valign="top">
+                        <b>42</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        Aug .2016
+                    </td>
+                    <td valign="top">
+                        <b>30</b>
+                    </td>
+                    <td valign="top">
+                        <b>24</b>
+                    </td>
+                    <td valign="top">
+                        <b>24</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        Aug 2015
+                    </td>
+                    <td valign="top">
+                        <b>42</b>
+                    </td>
+                    <td valign="top">
+                        <b>20</b>
+                    </td>
+                    <td valign="top">
+                        <b>20</b>
+                    </td>
+                    <td valign="top"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+<div class="container">
+        <br />
+ </div>
