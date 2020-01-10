@@ -10,10 +10,12 @@ namespace ITI.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly NewsRepository newsRepository;
         private readonly InstituteRepository instituteRepository;
         public HomeController()
         {
             instituteRepository = new InstituteRepository();
+            newsRepository = new NewsRepository();
         } 
 
         public ActionResult Mission()
@@ -40,12 +42,13 @@ namespace ITI.Web.Controllers
         }
         public ActionResult Home()
         {
-            var model = new List<NewsTableModel>();
-            return View(model);
+            var nws = newsRepository.GetNews().Select(x => new NewsTableModel { ID = x.ID, NewsText = x.NewsText, NewsDate = x.NewsDate, NewsHeadLine = x.NewsHeadLine });
+            return View(nws);
         }
         public ActionResult Defult()
         {
-            return View();
+            var nws = newsRepository.GetNews().Select(x => new NewsTableModel { ID = x.ID, NewsText=x.NewsText, NewsDate=x.NewsDate, NewsHeadLine=x.NewsHeadLine });
+            return View(nws);
         }
     }
 }
